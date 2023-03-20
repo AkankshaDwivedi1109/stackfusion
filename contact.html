@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Data from database</h1>
+        <table border=1px>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>email</th>
+                <th>Date of Birth</th>
+            </tr>
+        {% for i in x %}
+        <tr>
+            <td>{{i.Name}}</td>
+            <td> {{i.Contact}}</td>
+            <td>{{i.email}}</td>
+            <td> {{i.d_o_b}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>

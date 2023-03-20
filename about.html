@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+    .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border:3px black solid;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+     h1 
+     {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+     }
+        </style>
+    </head>
+    <body>
+        <h1 > Registration form</h1>
+    <div class="container">
+    <table>
+        <form action="contact" method="POST">
+            {% csrf_token %}
+            <tr><td>Name:</td><td><input type="text" name="Name" placeholder="Enter your name"/></td></tr>
+            <tr><td>Contact:</td><td><input type="text" name="Contact" placeholder="enter your Mob No."/></td></tr>
+            <tr><td>Email:</td><td><input type="text" name="email" placeholder="enter your Email"/></td></tr>
+            <tr><td>Date of Birth:</td><td><input type="date" name="d_o_b" placeholder="enter your Date of birth"/></td></tr>
+            <tr><td><button type="submit" >Submit</button></td></tr>
+        </form>
+    </table>
+    </div>
+    </body>
+</html>
